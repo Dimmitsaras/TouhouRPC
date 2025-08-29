@@ -142,32 +142,8 @@ void Touhou20::readDataFromGameProcess() {
         // 43 -> boss
         // 81 -> post-boss
         int stageState = ReadProcessMemoryInt(processHandle, moduleBase + STAGE_STATE);
-        if (stageState == 0) {
-            if (seenMidboss) {
-                state.stageState = StageState::Midboss;
-            }
-            else {
-                // If we're in stage state 0, we might be facing a midboss. We can check this to find out:
-
-                // Enemy state object
-                // This object holds various information about general ecl state.
-                // Offset 210 is some kind of 'boss attack active' flag, so it briefly flicks to 0 between attacks
-
-                // Since it flickers, we can remember that we saw it and just assume we're in a midboss until the stage state or game state changes.
-
-                /*int enemyID = ReadProcessMemoryInt(processHandle, ENEMY_STATE_POINTER);
-                if (enemyID > 0) {
-                    state.stageState = StageState::Midboss;
-                    seenMidboss = true;
-                }*/
-            }
-        }
-        else {
-            // reset once we've finished fighting the midboss.
-            seenMidboss = false;
-            if (stageState == 43) {
-                state.stageState = StageState::Boss;
-            }
+        if (stageState == 43) {
+            state.stageState = StageState::Boss;
         }
 
     }

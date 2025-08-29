@@ -40,7 +40,7 @@ private:
         STAGE = 0x001BA7E4L,
         MENU_POINTER = 0x001C6124L, //Find address in memory matching ds, subtract -0x18. MENU_POINTER's value contains the result
         BGM_STR = 0x001BCC7CL,
-        ENEMY_STATE_POINTER = 0x00D5C568L, //this is wrong but works //
+        //ENEMY_STATE_POINTER = 0x00D5C568L,
         STAGE_STATE = 0x001BA7ECL,
         SPELL_CARD_ID = 0x001BA7F4L,
         LIVES = 0x001BA6A8L,
