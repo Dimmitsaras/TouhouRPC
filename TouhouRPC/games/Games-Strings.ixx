@@ -1830,7 +1830,7 @@ export const vector<string> th20_spellCardName = {
     "\"Stone Goddess\""s,
     "\"Goddess of Unliving, Undying Stone\""s,
     "\"Goddess of Unliving, Undying Stone\""s,
-    // extra stage (101-114, 13 cards)
+    // extra stage (101-113, 13 cards)
     "Deer Sign \"Deer Genocider\""s,
     "Snake Princess \"Snake Lander\""s,
     "\"Zoltax Communication\""s,
