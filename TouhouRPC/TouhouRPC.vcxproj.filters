@@ -261,10 +261,18 @@
     <ClCompile Include="games\Games-TouhouBase.ixx">
       <Filter>Fichiers sources\Modules\Games</Filter>
     </ClCompile>
+    <ClCompile Include="Touhou20.cpp">
+      <Filter>Fichiers sources\Games</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="config.ini">
       <Filter>Fichiers de ressources</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Touhou20.h">
+      <Filter>Fichiers d%27en-tête\Games</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

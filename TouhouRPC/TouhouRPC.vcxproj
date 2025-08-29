@@ -221,6 +221,7 @@
     <ClCompile Include="includes\discord-files\user_manager.cpp" />
     <ClCompile Include="includes\discord-files\voice_manager.cpp" />
     <ClCompile Include="Log.ixx" />
+    <ClCompile Include="Touhou20.cpp" />
     <ClCompile Include="TouhouRPC.cpp" />
     <ClCompile Include="WindowsUtils.ixx" />
   </ItemGroup>
@@ -296,6 +297,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="config.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Touhou20.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
