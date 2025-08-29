@@ -55,7 +55,6 @@ export {
         int bombs{ 0 };
         int score{ 0 };
         int gameOvers{ 0 };
-        int miss{ 0 };
 
         // Photo details: Only used in photo-based games.
         int currentPhotoCount{ 0 };
@@ -300,8 +299,8 @@ export {
                     name.append(to_string(state.bombs));
                 }
                 name.append(")");
-                    break;
-                }
+                break;
+            }
             case GameState::Playing_CustomResources:
             {
                 name.append(getStageName());
